@@ -3,17 +3,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // If not using animations, use the following import instead:
 // import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-import { MatCheckboxModule, MatRadioModule } from '@angular/material';
+import { MatCheckboxModule, MatRadioModule, MatSelectModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
