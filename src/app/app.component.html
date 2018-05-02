@@ -1,7 +1,20 @@
+<h2>Inputs</h2>
+<mat-input-container>
+  <input ngModel name="username" type="text" matInput placeholder="Username" required>
+  <mat-hint>Type a unique username</mat-hint>
+  <span matSuffix>@domain.com</span>
+  <span matPrefix>admin.</span>
+  <mat-error>Username is required!</mat-error>
+</mat-input-container>
+<br>
+
+
 <h2>Select Options</h2>
-<mat-select placeholder="Favourite Color" [(ngModel)]="color">
-  <mat-option *ngFor="let color of colors" [value]="color.id">{{ color.name }}</mat-option>
-</mat-select>
+<mat-form-field>
+  <mat-select placeholder="Favourite Color" [(ngModel)]="color">
+    <mat-option *ngFor="let color of colors" [value]="color.id">{{ color.name }}</mat-option>
+  </mat-select>
+</mat-form-field>
 
 <h2>Radio Buttons</h2>
 <mat-radio-group value="0">
