@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  categories = [
+    { name: 'Beginner', selected: false },
+    { name: 'Intermediate', selected: false },
+    { name: 'Advanced', selected: false },
+  ];
+
   minDate = new Date(2017, 1, 1);
   maxDate = new Date(2017, 8, 1);
 
@@ -20,5 +26,13 @@ export class AppComponent {
 
   onChange($event) {
     console.log($event);
+  }
+
+  selectCategory(category) {
+    this.categories
+      .filter(c => c !== category)
+      .forEach(c => c.selected = false);
+
+    category.selected = !category.selected;
   }
 }

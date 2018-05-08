@@ -3,7 +3,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // If not using animations, use the following import instead:
 // import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
-
 import {
   MatCheckboxModule,
   MatRadioModule,
@@ -14,7 +13,8 @@ import {
   MatNativeDateModule,
   NativeDateAdapter,
   MatIconModule,
-  MatButtonModule
+  MatButtonModule,
+  MatChipsModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -33,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     MatDatepickerModule,
     MatNativeDateModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatChipsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
