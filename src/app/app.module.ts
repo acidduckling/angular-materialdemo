@@ -13,7 +13,8 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   NativeDateAdapter,
-  MatIconModule
+  MatIconModule,
+  MatButtonModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -31,7 +32,8 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
