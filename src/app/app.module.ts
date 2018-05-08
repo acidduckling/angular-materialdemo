@@ -12,7 +12,8 @@ import {
   MatSlideToggleModule,
   MatDatepickerModule,
   MatNativeDateModule,
-  NativeDateAdapter
+  NativeDateAdapter,
+  MatIconModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -29,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
