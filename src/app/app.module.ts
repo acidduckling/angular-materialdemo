@@ -14,7 +14,8 @@ import {
   NativeDateAdapter,
   MatIconModule,
   MatButtonModule,
-  MatChipsModule
+  MatChipsModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     MatNativeDateModule,
     MatIconModule,
     MatButtonModule,
-    MatChipsModule
+    MatChipsModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
