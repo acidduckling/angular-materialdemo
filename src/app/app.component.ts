@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  minDate = new Date(2017, 1, 1);
+  maxDate = new Date(2017, 8, 1);
+
   colors = [
     { id: 1, name: 'Red' },
     { id: 2, name: 'Green' },

@@ -1,3 +1,11 @@
+<h2>Date Pickers</h2>
+
+<mat-form-field>
+  <input (focus)="picker.open()" matInput [min]="minDate" [max]="maxDate" [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker touchUi="true"></mat-datepicker>
+</mat-form-field>
+
 <h2>Text Areas</h2>
 <mat-input-container>
   <textarea rows="2" matInput matTextareaAutosize></textarea>
