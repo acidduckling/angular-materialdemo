@@ -16,7 +16,8 @@ import {
   MatButtonModule,
   MatChipsModule,
   MatProgressSpinnerModule,
-  MatTooltipModule
+  MatTooltipModule,
+  MatTabsModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
@@ -38,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     MatChipsModule,
     MatProgressSpinnerModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
