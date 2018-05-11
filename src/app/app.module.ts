@@ -17,14 +17,19 @@ import {
   MatChipsModule,
   MatProgressSpinnerModule,
   MatTooltipModule,
-  MatTabsModule
+  MatTabsModule,
+  MatDialogModule
 } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { EditCourseComponent } from './edit-course/edit-course.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, EditCourseComponent],
+  entryComponents: [
+    EditCourseComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -40,7 +45,8 @@ import { FormsModule } from '@angular/forms';
     MatChipsModule,
     MatProgressSpinnerModule,
     MatTooltipModule,
-    MatTabsModule
+    MatTabsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
