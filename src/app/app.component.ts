@@ -32,8 +32,7 @@ export class AppComponent {
 
   constructor(private dialog: MatDialog) {
     this.isLoading = true;
-    this.getCourses()
-      .subscribe(x => this.isLoading = false);
+    this.getCourses().subscribe(x => (this.isLoading = false));
   }
 
   onChange($event) {
@@ -53,9 +52,11 @@ export class AppComponent {
   }
 
   openDialog() {
-    this.dialog.open(EditCourseComponent)
+    this.dialog
+      .open(EditCourseComponent, {
+        data: { courseId: 1 }
+      })
       .afterClosed()
       .subscribe(result => console.log(result));
-
   }
 }
