@@ -2,6 +2,7 @@
 
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
 @import "@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .mat-tab-body-content {
     padding-top: 20px;
